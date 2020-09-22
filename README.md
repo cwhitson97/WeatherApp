@@ -1,6 +1,6 @@
 # Weather Predictor App
 _I’m working with Courtney Whitson, Linete Estrada, Robby Wilcox, Nick Wilkins to build a weather app so 
-that end users can be aware of weather conditions for the day or week, and can properly prepare for the day with tips provided by the app. We are building a weather app to prevent weather cycle confusion throughout the day. _
+that end users can be aware of weather conditions for the day or week, and can properly prepare for the day with tips provided by the app. We are building a weather app to prevent weather confusion throughout the day. _
 
 __General Info:__
 
