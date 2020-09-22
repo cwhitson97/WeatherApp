@@ -1,6 +1,6 @@
 # Weather Predictor App
 _I’m working with Courtney Whitson, Linete Estrada, Robby Wilcox, Nick Wilkins to build a weather app so 
-that end users can be aware of weather conditions for the day or week, and can properly prepare for the day with tips provided by the app. We are building a weather app to prevent future weather pattern confusion throughout the day. _
+that end users can be aware of weather conditions for the day or week, and can properly prepare for the day with tips provided by the app. We are building a weather app to prevent weather cycle confusion throughout the day. _
 
 __General Info:__
 
@@ -16,11 +16,11 @@ __Technologies Used:__
 __Features:__
 
 1. Clothing Predictor
-	* This feature will use current weather conditions to recommend clothing articles to users daily 
-	* User Stories that correspond to the feature
+	* This feature will use current weather conditions to recommend clothing articles to users, such as student, daily. 
+	* As a student, I can get recommendations on clothings articles to wear so that I dress appropriately for the current weather conditions 
 	
 2. Weather Pattern Detector 
-	* This feature will notify users of changing weather patterns throughout the day  
-	* User Stories that correspond to the feature
+	* This feature will notify users, such as students, of changing weather patterns throughout the day  
+	* As a student, I can receive weather notifications so that I am up to date with current weather patterns.
 	
 
