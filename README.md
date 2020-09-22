@@ -1,10 +1,10 @@
 # Project Name
-_I’m working with Courtney Whitson, Linete Estrada, Robby Wilcox, Nick Wilkins to [make, build, teach, or do something] so 
-that [audience, end users, consumers, community members] can [do something different, achieve a goal]._
+_I’m working with Courtney Whitson, Linete Estrada, Robby Wilcox, Nick Wilkins to build a weather app so 
+that end users can be aware of weather conditions for the day or week, and can properly prepare for the day with tips provided by the app._
 
 __General Info:__
 
-* /* add image */
+* ![weather icon](https://www.iconfinder.com/data/icons/luchesa-vol-9/128/Weather-512.png)
 * /* Optional to add missing things that we could of used in our project */
 
 __Technologies Used:__
