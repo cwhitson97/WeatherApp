@@ -24,7 +24,7 @@ __Features:__
 	* As a student, I can receive weather notifications so that I am up to date with current weather patterns.
 	
 2. Weather API
-	* Completed by Robby Wilcox. This is the way that the weatherapp is getting information to run the rest of the application.
+	* Completed by Robby Wilcox. This is the way that the weatherapp is getting information to run the rest of the application. This is located in the WeatherAPI.py file
 	
 __Robby Wilcox's Next Steps:__
 
