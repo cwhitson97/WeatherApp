@@ -23,6 +23,9 @@ __Features:__
 	* This feature will notify users, such as students, of changing weather patterns throughout the day  
 	* As a student, I can receive weather notifications so that I am up to date with current weather patterns.
 	
+2. Weather API
+	* Completed by Robby Wilcox. This is the way that the weatherapp is getting information to run the rest of the application.
+	
 __Robby Wilcox's Next Steps:__
 
 Status of Project: We currently have a running program that is not connected to the back end where all the information enters. Next step is to get all of the files talking with one another so that we can start ocmpiling a running demo of weather information.
