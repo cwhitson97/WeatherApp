@@ -23,4 +23,9 @@ __Features:__
 	* This feature will notify users, such as students, of changing weather patterns throughout the day  
 	* As a student, I can receive weather notifications so that I am up to date with current weather patterns.
 	
+__Robby Wilcox's Next Steps:__
+
+Status of Project: We currently have a running program that is not connected to the back end where all the information enters. Next step is to get all of the files talking with one another so that we can start ocmpiling a running demo of weather information.
+
+1. Polish up the weather API file so that it prints out the information in a way that meshes well with the other aspects of our program. In the end it will create easy to read and easy to manipulate data so that any team member can work on the data with little more than a quick brushup on the readme file.
 
