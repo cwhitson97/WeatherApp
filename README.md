@@ -26,9 +26,13 @@ __Features:__
 2. Weather API
 	* Completed by Robby Wilcox. This is the way that the weatherapp is getting information to run the rest of the application. This is located in the WeatherAPI.py file
 	
+Status of Project: We currently have a running program that is not connected to the back end where all the information enters. Next step is to get all of the files talking with one another so that we can start compiling a running demo of weather information.	
+	
 __Robby Wilcox's Next Steps:__
-
-Status of Project: We currently have a running program that is not connected to the back end where all the information enters. Next step is to get all of the files talking with one another so that we can start ocmpiling a running demo of weather information.
 
 1. Polish up the weather API file so that it prints out the information in a way that meshes well with the other aspects of our program. In the end it will create easy to read and easy to manipulate data so that any team member can work on the data with little more than a quick brushup on the readme file.
 
+__Linete Estrada's Next Steps:__
+
+1. Design a mock version of our GUI to know exactly what we want the actual GUI to look like 
+2. Clean up the current UI to match the GUI mock version 
