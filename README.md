@@ -25,7 +25,7 @@ __Features:__
 	
 2. Weather API
 	* Completed by Robby Wilcox. This is the way that the weatherapp is getting information to run the rest of the application. This is located in the WeatherAPI.py file
-3. Weatherapp website
+3. Weatherapp site
 	* The base layout is completed,  but it is still a blank slate because we have not implemented the code in yet
 Status of Project: We currently have a running program that is not connected to the back end where all the information enters. Next step is to get all of the files talking with one another so that we can start compiling a running demo of weather information.	
 	
@@ -38,4 +38,4 @@ __Linete Estrada's Next Steps:__
 1. Design a mock version of our GUI to know exactly what we want the actual GUI to look like 
 2. Clean up the current UI to match the GUI mock version 
 __Nick Wilkins's Next Steps:__
-1. Fix the website up and start to work with other team members so that we can get the code running on the web app.
+1. Fix the website up and start to work with other team members so that we can get the code runnin.
