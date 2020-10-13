@@ -16,8 +16,9 @@ __Technologies Used:__
 __Features:__
 
 1. Clothing Predictor
+    * In progress by Linete Estrada. 
 	* This feature will use current weather conditions to recommend clothing articles to users, such as student, daily. 
-	* As a student, I can get recommendations on clothings articles to wear so that I dress appropriately for the current weather conditions 
+	* As a student, I can get recommendations on clothing articles to wear so that I dress appropriately for the current weather conditions 
 	
 2. Weather Pattern Detector 
 	* This feature will notify users, such as students, of changing weather patterns throughout the day  
@@ -37,6 +38,8 @@ __Linete Estrada's Next Steps:__
 
 1. Design a mock version of our GUI to know exactly what we want the actual GUI to look like 
 2. Clean up the current UI to match the GUI mock version 
+
+Status of the Project: Currently have a mock version of the Clothing Predictor notifications that the user will be able to see. This is located in the notification.py file. Next step is to expand the notification tab and include it into the main updated UI.
 
 __Courtney Whitson's Next Steps:__
 
