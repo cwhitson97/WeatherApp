@@ -8,31 +8,37 @@
             pos: self.pos
     Label:
         size_hint: 0.3,0.3
-        font_size: 80
+        font_size: 70
         bold: True
         #pos_hint: {"x": 0, "top": 1}
         center_x: root.width / 2
         top: root.top - 50
         color: 0,0,0,1
-        text: "Weather Forecast"
+        text: "Weather Notification"
     Image:
         source: 'weatherlogo copy.png'
         center_x: root.width / 4
         top: root.top - 50
         #size_hint: 0.1,0.1
         #pos_hint: {"x": 0.9, "top":1}
+
     GridLayout:
         cols:1
         size: root.width-400, root.height-400
         pos: 200,200
+        GridLayout:
+            cols: 2
+            TextInput:
+                multiline: False
+        Button:
+            font_size: 40
+            background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
+            size_hint: 0.1,0.1
+            text: "Refresh"
+        Button:
+            font_size: 40
+            background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
+            size_hint: 0.1,0.1
+            #pos_hint: {"x": 0.9, "bottom": 0}
+            text: "Exit"
 
-        Button:
-            font_size: 40
-            background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
-            size_hint: 0.1,0.1
-            text: "Returning User"
-        Button:
-            font_size: 40
-            background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
-            size_hint: 0.1,0.1
-            text: "New User"
