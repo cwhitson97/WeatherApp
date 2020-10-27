@@ -144,3 +144,5 @@ def create_report(weather_data, options):
     report_str = "\n".join(report)
 
     return report_str
+
+#TESTING INPUT
