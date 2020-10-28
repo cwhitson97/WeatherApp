@@ -1,5 +1,3 @@
-from tkinter import *
-from tkinter import messagebox
 from configparser import ConfigParser
 import requests
 
