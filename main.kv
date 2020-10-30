@@ -2,6 +2,8 @@
 #presents users with a main page which allows them to either sign in or create an account
 #goes alongside the main.py file
 
+#:import builder kivy.lang.Builder
+
 <MainPage>:
     canvas:
         Color:
@@ -34,8 +36,10 @@
             background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
             size_hint: 0.1,0.1
             text: "Returning User"
+            on_press: root.manager.current = 'existing'
         Button:
             font_size: 40
             background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
             size_hint: 0.1,0.1
             text: "New User"
+            on_press: root.manager.current = 'new'
