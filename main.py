@@ -12,6 +12,7 @@ from kivy.lang import Builder
 Builder.load_file('main.kv')
 Builder.load_file('new.kv')
 Builder.load_file('existing.kv')
+Builder.load_file('weather.kv')
 
 
 class NewPage(Screen):
@@ -26,10 +27,15 @@ class ExistingPage(Screen):
     pass
 
 
+class WeatherPage(Screen):
+    pass
+
+
 screen = ScreenManager()
 screen.add_widget(MainPage(name='menu'))
 screen.add_widget(NewPage(name='new'))
 screen.add_widget(ExistingPage(name='existing'))
+screen.add_widget(WeatherPage(name='weather'))
 
 
 class MainApp(App):
