@@ -1,0 +1,53 @@
+#This is the graphics page for the forecast part of the application
+#presents users with 7 day forecast
+#goes alongside the forecast.py file
+
+<ForecastPage>:
+    canvas:
+        Color:
+            rgb: 172/255.0, 218/255.0, 229/255.0 ,1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    GridLayout:
+        cols:1
+        size: root.width-100, root.height-100
+        pos: 50,50
+        Label:
+            size_hint: 0.5,0.5
+            font_size: 90
+            bold: True
+            color: 0,0,0,1
+            text: "Weather Forecast"
+        GridLayout:
+            cols: 7
+            #padding: 50,50,50,50
+            TextInput:
+                multiline: False
+            TextInput:
+                multiline: False
+            TextInput:
+                multiline: False
+            TextInput:
+                multiline: False
+            TextInput:
+                multiline: False
+            TextInput:
+                multiline: False
+            TextInput:
+                multiline: False
+        GridLayout:
+            cols: 2
+            padding: 150,150,150,150
+            spacing: 100
+            Button:
+                font_size: 40
+                background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
+                size_hint: 0.1,0.1
+                text: "Refresh"
+            Button:
+                font_size: 40
+                background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
+                size_hint: 0.1,0.1
+                text: "Weather tips"
+
