@@ -12,6 +12,7 @@ Builder.load_file('main.kv')
 Builder.load_file('new.kv')
 Builder.load_file('existing.kv')
 Builder.load_file('weather.kv')
+Builder.load_file('forecast.kv')
 
 
 class NewPage(Screen):
@@ -30,11 +31,16 @@ class WeatherPage(Screen):
     pass
 
 
+class ForecastPage(Screen):
+    pass
+
+
 screen = ScreenManager()
 screen.add_widget(MainPage(name='menu'))
 screen.add_widget(NewPage(name='new'))
 screen.add_widget(ExistingPage(name='existing'))
 screen.add_widget(WeatherPage(name='weather'))
+screen.add_widget(ForecastPage(name='forecast'))
 
 
 class MainApp(App):

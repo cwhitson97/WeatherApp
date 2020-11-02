@@ -9,10 +9,19 @@
         Rectangle:
             size: self.size
             pos: self.pos
+
+    Button:
+        font_size: 40
+        background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
+        size_hint: 0.05,0.05
+        pos_hint: {"x": 0.02, "y": .93}
+        text: "Back"
+        on_press: root.manager.current = 'menu'
+
     GridLayout:
         cols:1
         size: root.width-100, root.height-100
-        pos: 50,50
+        pos_hint: {"x": 0, "y": 0}
         Label:
             size_hint: 0.5,0.5
             font_size: 90
