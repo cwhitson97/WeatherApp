@@ -1,6 +1,8 @@
-#This is the graphics page for the notification part of the application
-#presents users with tips and suggestions based on the current weather
-#goes alongside the notifications.py file
+# This is the graphics page for the notification part of the application
+# presents users with tips and suggestions based on the current weather
+# goes alongside the notifications.py file
+
+#:import App kivy.app.App
 
 <WeatherPage>:
     canvas:
@@ -13,22 +15,25 @@
         size_hint: 0.3,0.3
         font_size: 70
         bold: True
-        #pos_hint: {"x": 0, "top": 1}
-        center_x: root.width / 2
-        top: root.top - 50
+        pos_hint: {'x': 0.4, 'y': 0.75}
         color: 0,0,0,1
         text: "Weather Notification"
     Image:
-        source: 'weatherlogo copy.png'
-        center_x: root.width / 4
-        top: root.top - 50
-        #size_hint: 0.1,0.1
-        #pos_hint: {"x": 0.9, "top":1}
+        source: 'WeatherIcon.png'
+        size_hint: 0.1,0.1
+        pos_hint: {"x": 0.25, "y": 0.857}
+    Button:
+        font_size: 40
+        background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
+        size_hint: 0.05,0.05
+        pos_hint: {"x": 0.02, "y": .93}
+        text: "Back"
+        on_press: root.manager.current = 'menu'
 
     GridLayout:
         cols:1
-        size: root.width-400, root.height-400
-        pos: 200,200
+        size_hint: 0.8,0.8
+        pos_hint: {"x": 0.1, "y": 0.05}
         GridLayout:
             cols: 2
             TextInput:
@@ -44,4 +49,5 @@
             size_hint: 0.1,0.1
             #pos_hint: {"x": 0.9, "bottom": 0}
             text: "Exit"
+            on_press: app.stop()
 
