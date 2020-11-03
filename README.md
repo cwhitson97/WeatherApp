@@ -33,7 +33,7 @@ Status of Project: We currently have a running program that is not connected to 
 __Robby Wilcox's Next Steps:__
 
 1. Polish up the weather API file so that it prints out the information in a way that meshes well with the other aspects of our program. In the end it will create easy to read and easy to manipulate data so that any team member can work on the data with little more than a quick brushup on the readme file.
-
+2.
 __Linete Estrada's Next Steps:__
 
 1. Design a mock version of our GUI to know exactly what we want the actual GUI to look like 
@@ -46,8 +46,10 @@ __Courtney Whitson's Next Steps:__
 Status of Project: The Main executable file is functional, but only displays a Label to verify that the window launches.  
 
 
-2. Connect all the modules to the main executable, and build up the GUI and UI design. Will also begin writing up the test cases for verifying the functionality of the weather app. 
-
+1. Connect all the modules to the main executable, and build up the GUI and UI design. Will also begin writing up the test cases for verifying the functionality of the weather app. 
+2. 
 
 __Nick Wilkins's Next Steps:__
-1. Fix the website up and start to work with other team members so that we can get the code runnin.
+1. Fill in  the UML using the code from mater branch  using pynsource 
+2. Have a showcase application on the master branch so that we can present
+3. 
