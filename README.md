@@ -62,3 +62,12 @@ Status of Project: We have linked all the '.kv' files to the main executable, an
 1. Will connect the Weather API to the GUI, to display the weather
 2. Create unit tests to verify the functionality of the app
 3. Create a downloadable installation for app
+
+__Robby Wilcox's Accomplishments:__
+
+Accomplishments for sprint 3: Successfully completed the weather API for the application. It properly pulls weather information from the internet. I have also completed a weather API DRIVER file so that it can be tested.
+
+* Next Steps:
+	1. Create a second API to pull the 7 day forecast.
+	2. Wrap both APIs into an easy-to-use format for the other team members.
+	3. Create the tips and tricks for weather that is occuring
