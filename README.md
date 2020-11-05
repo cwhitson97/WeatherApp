@@ -16,7 +16,7 @@ __Technologies Used:__
 __Features:__
 
 1. Clothing Predictor
-    * In progress by Linete Estrada. This is located in the notifications.py file. 
+    * In progress by Linete Estrada. This is located in the main.py file as well as the main.kv file.
 	* This feature will use current weather conditions to recommend clothing articles to users, such as student, daily. 
 	* As a student, I can get recommendations on clothing articles to wear so that I dress appropriately for the current weather conditions 
 	
@@ -71,3 +71,11 @@ Accomplishments for sprint 3: Successfully completed the weather API for the app
 	1. Create a second API to pull the 7 day forecast.
 	2. Wrap both APIs into an easy-to-use format for the other team members.
 	3. Create the tips and tricks for weather that is occuring
+	
+__Linete Estrada's Accomplishments:__
+Accomplishments for sprint 3: Succesfully completed a working GUI application which displays a main window as well as a 7 day forecast window and a notification window. The GUI application can be seen in the main.py file which uses the main,kv, forecast.kv, and weather.kv files to add widgets to the windows.
+
+Next Steps: 
+	1. Give the GUI a cleaner, more professional look. 
+	2. Replace the buttons with a navigation bar to give users easier access between screens 
+	3. Finish the creation of the notification pop up window that will display information to users.
