@@ -73,9 +73,10 @@ Accomplishments for sprint 3: Successfully completed the weather API for the app
 	3. Create the tips and tricks for weather that is occuring
 	
 __Linete Estrada's Accomplishments:__
-Accomplishments for sprint 3: Succesfully completed a working GUI application which displays a main window as well as a 7 day forecast window and a notification window. The GUI application can be seen in the main.py file which uses the main,kv, forecast.kv, and weather.kv files to add widgets to the windows.
 
-Next Steps: 
+Accomplishments for sprint 3: Succesfully completed a working GUI application which displays a main window as well as a 7 day forecast window and a notification window. The GUI application can be seen in the main.py file which uses the main.kv, forecast.kv, and weather.kv files to add widgets to the windows.
+
+* Next Steps: 
 	1. Give the GUI a cleaner, more professional look. 
-	2. Replace the buttons with a navigation bar to give users easier access between screens 
+	2. Replace the buttons with a navigation bar to give users easier access between screens. 
 	3. Finish the creation of the notification pop up window that will display information to users.
