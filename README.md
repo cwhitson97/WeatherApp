@@ -51,3 +51,14 @@ Status of Project: The Main executable file is functional, but only displays a L
 
 __Nick Wilkins's Next Steps:__
 1. Fix the website up and start to work with other team members so that we can get the code runnin.
+
+
+__Sprint 3 Retrospective:__
+
+__Courtney Whitson's Next Steps:__
+
+Status of Project: We have linked all the '.kv' files to the main executable, and are able to click buttons and navigate the app. 
+
+1. Will connect the Weather API to the GUI, to display the weather
+2. Create unit tests to verify the functionality of the app
+3. Create a downloadable installation for app
