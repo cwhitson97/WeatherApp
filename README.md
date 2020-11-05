@@ -82,3 +82,12 @@ Accomplishments for sprint 3: Succesfully completed a working GUI application wh
 	1. Give the GUI a cleaner, more professional look. 
 	2. Replace the buttons with a navigation bar to give users easier access between screens. 
 	3. Finish the creation of the notification pop up window that will display information to users.
+	
+__Kristopher  Wilkins's Next Steps:__
+
+Accomplishments for sprint 3: created a base UML diagram for the application, also help create the standard documentation for the project.
+* Next Steps:
+1. Fully the complete the UML using the code provided by team in the master branch
+2. Try to create a working application on my device so that we can showcase our product for sprint 3
+3. Get with team so that i can figure out who i can help once  my portion is finished 
+
