@@ -57,7 +57,9 @@ __Sprint 3 Retrospective:__
 
 __Courtney Whitson's Next Steps:__
 
-Status of Project: We have linked all the '.kv' files to the main executable, and are able to click buttons and navigate the app. 
+Status of Project: We have linked all the '.kv' files to the main executable, and are able to click buttons and navigate the app.
+Artifact: Within our source files you will find files ending with the extension '.kv' and 'main.py'. These files contain the GUI design and actions for any clickable items on the page.
+		  These files are used when loading the window or any time a button is pressed.
 
 1. Will connect the Weather API to the GUI, to display the weather
 2. Create unit tests to verify the functionality of the app
