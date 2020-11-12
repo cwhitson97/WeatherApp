@@ -3,13 +3,15 @@
 #goes alongside the forecast.py file
 
 <ForecastPage>:
+    zip: zip_code
+    country: country_abbrev
+
     canvas:
         Color:
             rgb: 172/255.0, 218/255.0, 229/255.0 ,1
         Rectangle:
             size: self.size
             pos: self.pos
-
     Button:
         font_size: 40
         background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
@@ -17,46 +19,83 @@
         pos_hint: {"x": 0.02, "y": .93}
         text: "Back"
         on_press: root.manager.current = 'menu'
-
+    Label:
+        size_hint: 0.5,0.5
+        pos_hint: {"center_x": 0.5, "center_y": .9}
+        font_size: 90
+        bold: True
+        color: 0,0,0,1
+        text: "Weather Forecast"
     GridLayout:
-        cols:1
-        size: root.width-100, root.height-100
-        pos_hint: {"x": 0, "y": 0}
+        cols: 3
+        pos_hint: {"center_x": 0.5, "center_y": .83}
+        size_hint: 0.5,0.05
+        spacing: [40,0]
+        TextInput:
+            id: zip_code
+            hint_text: 'Enter Zip'
+            multiline: False
+        TextInput:
+            id: country_abbrev
+            hint_text: 'Enter Country Abbrev.'
+            multiline: False
+        Button:
+            Text: 'Go'
+    GridLayout:
+        cols: 7
+        pos_hint: {"center_x": 0.5, "center_y": .77}
+        size_hint: 1,0.2
         Label:
-            size_hint: 0.5,0.5
-            font_size: 90
-            bold: True
             color: 0,0,0,1
-            text: "Weather Forecast"
-        GridLayout:
-            cols: 7
-            #padding: 50,50,50,50
-            TextInput:
-                multiline: False
-            TextInput:
-                multiline: False
-            TextInput:
-                multiline: False
-            TextInput:
-                multiline: False
-            TextInput:
-                multiline: False
-            TextInput:
-                multiline: False
-            TextInput:
-                multiline: False
-        GridLayout:
-            cols: 2
-            padding: 150,150,150,150
-            spacing: 100
-            Button:
-                font_size: 40
-                background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
-                size_hint: 0.1,0.1
-                text: "Refresh"
-            Button:
-                font_size: 40
-                background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
-                size_hint: 0.1,0.1
-                text: "Weather tips"
+            text: 'Monday'
+        Label:
+            color: 0,0,0,1
+            text: 'Tuesday'
+        Label:
+            color: 0,0,0,1
+            text: 'Wednesday'
+        Label:
+            color: 0,0,0,1
+            text: 'Thursday'
+        Label:
+            color: 0,0,0,1
+            text: 'Friday'
+        Label:
+            color: 0,0,0,1
+            text: 'Saturday'
+        Label:
+            color: 0,0,0,1
+            text: 'Sunday'
+    GridLayout:
+        cols: 7
+        pos_hint: {"center_x": 0.5, "center_y": .5}
+        size_hint: 1,0.5
+        TextInput:
+            id: Mon
+            readonly: True
+        TextInput:
+            readonly: True
+        TextInput:
+            readonly: True
+        TextInput:
+            readonly: True
+        TextInput:
+            readonly: True
+        TextInput:
+            readonly: True
+        TextInput:
+            readonly: True
+    GridLayout:
+        cols: 2
+        pos_hint: {"center_x": 0.5, "center_y": .15}
+        size_hint: 0.7,0.1
+        spacing: [40,0]
+        Button:
+            font_size: 40
+            background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
+            text: "Refresh"
+        Button:
+            font_size: 40
+            background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
+            text: "Weather tips"
 
