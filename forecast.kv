@@ -14,14 +14,19 @@
             pos: self.pos
     Button:
         font_size: 40
-        background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
-        size_hint: 0.05,0.05
-        pos_hint: {"x": 0.02, "y": .93}
+        background_color: 0/255.0, 0/255.0, 0/255.0 ,0
+        size_hint: 0.1,0.1
+        pos_hint: {"x": 0.01, "y": .90}
+        color: 0,0,0,1
         text: "Back"
         on_press: root.manager.current = 'menu'
+    Image:
+        source: 'WeatherIcon.png'
+        size_hint: 0.1,0.1
+        pos_hint: {"x": 0.18, "y": 0.88}
     Label:
         size_hint: 0.5,0.5
-        pos_hint: {"center_x": 0.5, "center_y": .9}
+        pos_hint: {"center_x": 0.5, "center_y": .93}
         font_size: 90
         bold: True
         color: 0,0,0,1
@@ -30,7 +35,7 @@
         cols: 3
         pos_hint: {"center_x": 0.5, "center_y": .83}
         size_hint: 0.5,0.05
-        spacing: [40,0]
+        spacing: [20,0]
         TextInput:
             id: zip_code
             hint_text: 'Enter Zip'
@@ -40,7 +45,9 @@
             hint_text: 'Enter Country Abbrev.'
             multiline: False
         Button:
-            Text: 'Go'
+            size_hint: 0.2,0.2
+            text: "Go"
+
     GridLayout:
         cols: 7
         pos_hint: {"center_x": 0.5, "center_y": .77}
@@ -71,7 +78,6 @@
         pos_hint: {"center_x": 0.5, "center_y": .5}
         size_hint: 1,0.5
         TextInput:
-            id: Mon
             readonly: True
         TextInput:
             readonly: True
@@ -98,4 +104,5 @@
             font_size: 40
             background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
             text: "Weather tips"
+            on_press: root.manager.current = 'weather'
 
