@@ -1,4 +1,4 @@
-from weather_api import get_weather
+from src.weather_api import get_weather
 
 
 zipcode = input("Enter a zipcode to get weather for ")
