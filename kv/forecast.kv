@@ -11,19 +11,19 @@
             pos: self.pos
     Button:
         font_size: 40
-        background_color: 0/255.0, 0/255.0, 0/255.0 ,0
-        size_hint: 0.1,0.1
-        pos_hint: {"x": 0.01, "y": .90}
-        color: 0,0,0,1
+        background_normal: ''
+        background_color: 199/255.0, 166/255.0, 0/255.0 ,1.0
+        size_hint: 0.1,0.07
+        pos_hint: {"x": 0.01, "y": .92}
         text: "Back"
         on_press: root.manager.current = 'menu'
     Image:
         source: '../kv/WeatherIcon.png'
         size_hint: 0.1,0.1
-        pos_hint: {"x": 0.18, "y": 0.88}
+        pos_hint: {"x": 0.23, "y": 0.88}
     Label:
         size_hint: 0.5,0.5
-        pos_hint: {"center_x": 0.5, "center_y": .93}
+        pos_hint: {"center_x": 0.55, "center_y": .93}
         font_size: 90
         bold: True
         color: 0,0,0,1
@@ -98,6 +98,7 @@
         pos_hint: {"center_x": 0.5, "center_y": .15}
         size_hint: 0.7,0.1
         spacing: [40,0]
+        padding: 20,20,20,20
         Button:
             font_size: 40
             background_normal: ''
