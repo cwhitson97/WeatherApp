@@ -18,7 +18,7 @@
         text: "Back"
         on_press: root.manager.current = 'menu'
     Image:
-        source: 'kv/WeatherIcon.png'
+        source: '../kv/WeatherIcon.png'
         size_hint: 0.1,0.1
         pos_hint: {"x": 0.18, "y": 0.88}
     Label:
@@ -100,11 +100,13 @@
         spacing: [40,0]
         Button:
             font_size: 40
-            background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
+            background_normal: ''
+            background_color: 199/255.0, 166/255.0, 0/255.0 ,1.0
             text: "Refresh"
         Button:
             font_size: 40
-            background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
+            background_normal: ''
+            background_color: 199/255.0, 166/255.0, 0/255.0 ,1.0
             text: "Weather tips"
             on_press: root.manager.current = 'weather'
 
