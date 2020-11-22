@@ -1,0 +1,110 @@
+#This is the graphics page for the forecast part of the application
+#presents users with 7 day forecast
+#goes alongside the forecast.py file
+
+<ForecastPage>:
+    canvas:
+        Color:
+            rgb: 172/255.0, 218/255.0, 229/255.0 ,1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    Button:
+        font_size: 40
+        background_color: 0/255.0, 0/255.0, 0/255.0 ,0
+        size_hint: 0.1,0.1
+        pos_hint: {"x": 0.01, "y": .90}
+        color: 0,0,0,1
+        text: "Back"
+        on_press: root.manager.current = 'menu'
+    Image:
+        source: 'kv/WeatherIcon.png'
+        size_hint: 0.1,0.1
+        pos_hint: {"x": 0.18, "y": 0.88}
+    Label:
+        size_hint: 0.5,0.5
+        pos_hint: {"center_x": 0.5, "center_y": .93}
+        font_size: 90
+        bold: True
+        color: 0,0,0,1
+        text: "Weather Forecast"
+    GridLayout:
+        cols: 3
+        pos_hint: {"center_x": 0.5, "center_y": .83}
+        size_hint: 0.5,0.05
+        spacing: [20,0]
+
+        zip_code: zip
+        country_code: country
+
+        TextInput:
+            id: zip
+            hint_text: 'Enter Zip'
+            multiline: False
+        TextInput:
+            id: country
+            hint_text: 'Enter Country Abbrev.'
+            multiline: False
+        Button:
+            size_hint: 0.2,0.2
+            text: "Go"
+            on_release: root.save_location()
+
+    GridLayout:
+        cols: 7
+        pos_hint: {"center_x": 0.5, "center_y": .77}
+        size_hint: 1,0.2
+        Label:
+            color: 0,0,0,1
+            text: 'Monday'
+        Label:
+            color: 0,0,0,1
+            text: 'Tuesday'
+        Label:
+            color: 0,0,0,1
+            text: 'Wednesday'
+        Label:
+            color: 0,0,0,1
+            text: 'Thursday'
+        Label:
+            color: 0,0,0,1
+            text: 'Friday'
+        Label:
+            color: 0,0,0,1
+            text: 'Saturday'
+        Label:
+            color: 0,0,0,1
+            text: 'Sunday'
+    GridLayout:
+        cols: 7
+        pos_hint: {"center_x": 0.5, "center_y": .5}
+        size_hint: 1,0.5
+        TextInput:
+            readonly: True
+        TextInput:
+            readonly: True
+        TextInput:
+            readonly: True
+        TextInput:
+            readonly: True
+        TextInput:
+            readonly: True
+        TextInput:
+            readonly: True
+        TextInput:
+            readonly: True
+    GridLayout:
+        cols: 2
+        pos_hint: {"center_x": 0.5, "center_y": .15}
+        size_hint: 0.7,0.1
+        spacing: [40,0]
+        Button:
+            font_size: 40
+            background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
+            text: "Refresh"
+        Button:
+            font_size: 40
+            background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
+            text: "Weather tips"
+            on_press: root.manager.current = 'weather'
+
