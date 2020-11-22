@@ -2,10 +2,11 @@ from configparser import ConfigParser
 import requests
 
 url = 'http://api.openweathermap.org/data/2.5/weather?zip={},{}&appid={}'
-config_file = 'config.ini'
+config_file = '../config.ini'
 config = ConfigParser()
 config.read(config_file)
 api_key = config['api_key']['key']
+
 
 def get_weather(zip, country):
     result = requests.get(url.format(zip, country, api_key))
@@ -21,3 +22,4 @@ def get_weather(zip, country):
         return final
     else:
         return None
+
