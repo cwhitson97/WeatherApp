@@ -2,18 +2,16 @@
 # presents users with options to create an account or sign in to an existing account
 # goes alongside main.kv file
 
-
 from kivy.app import App
 from kivy.properties import ObjectProperty, StringProperty
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.lang import Builder
 
-Builder.load_file('kv/main.kv')
-Builder.load_file('kv/new.kv')
-Builder.load_file('kv/existing.kv')
-Builder.load_file('kv/weather.kv')
-Builder.load_file('kv/forecast.kv')
-
+Builder.load_file('../kv/main.kv')  # up a directory. /kv has this folder-> /kv
+Builder.load_file('../kv/new.kv')
+Builder.load_file('../kv/existing.kv')
+Builder.load_file('../kv/weather.kv')
+Builder.load_file('../kv/forecast.kv')
 
 class NewPage(Screen):
     pass
