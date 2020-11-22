@@ -7,6 +7,7 @@ from kivy.properties import ObjectProperty, StringProperty
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.lang import Builder
 
+# ../ means going up a directory
 Builder.load_file('../kv/main.kv')  # up a directory. /kv has this folder-> /kv
 Builder.load_file('../kv/new.kv')
 Builder.load_file('../kv/existing.kv')
