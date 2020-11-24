@@ -3,16 +3,16 @@
 # goes alongside main.kv file
 
 
-import kivy
 from kivy.app import App
+from kivy.properties import ObjectProperty, StringProperty
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.lang import Builder
 
-Builder.load_file('main.kv')
-Builder.load_file('new.kv')
-Builder.load_file('existing.kv')
-Builder.load_file('weather.kv')
-Builder.load_file('forecast.kv')
+Builder.load_file('kv/main.kv')
+Builder.load_file('kv/new.kv')
+Builder.load_file('kv/existing.kv')
+Builder.load_file('kv/weather.kv')
+Builder.load_file('kv/forecast.kv')
 
 
 class NewPage(Screen):
@@ -32,7 +32,16 @@ class WeatherPage(Screen):
 
 
 class ForecastPage(Screen):
-    pass
+    zip_code = ObjectProperty()
+    country_code = ObjectProperty()
+    zipcode = StringProperty("")
+    countrycode = StringProperty("")
+
+    def save_location(self):
+        self.zipcode = self.zip_code.text
+        print(self.zipcode)
+        self.countrycode = self.country_code.text
+        print(self.countrycode)
 
 
 screen = ScreenManager()
@@ -44,6 +53,7 @@ screen.add_widget(ForecastPage(name='forecast'))
 
 
 class MainApp(App):
+
     def build(self):
         return screen
 

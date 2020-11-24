@@ -3,9 +3,6 @@
 #goes alongside the forecast.py file
 
 <ForecastPage>:
-    zip: zip_code
-    country: country_abbrev
-
     canvas:
         Color:
             rgb: 172/255.0, 218/255.0, 229/255.0 ,1
@@ -21,7 +18,7 @@
         text: "Back"
         on_press: root.manager.current = 'menu'
     Image:
-        source: 'WeatherIcon.png'
+        source: 'kv/WeatherIcon.png'
         size_hint: 0.1,0.1
         pos_hint: {"x": 0.18, "y": 0.88}
     Label:
@@ -36,17 +33,22 @@
         pos_hint: {"center_x": 0.5, "center_y": .83}
         size_hint: 0.5,0.05
         spacing: [20,0]
+
+        zip_code: zip
+        country_code: country
+
         TextInput:
-            id: zip_code
+            id: zip
             hint_text: 'Enter Zip'
             multiline: False
         TextInput:
-            id: country_abbrev
+            id: country
             hint_text: 'Enter Country Abbrev.'
             multiline: False
         Button:
             size_hint: 0.2,0.2
             text: "Go"
+            on_release: root.save_location()
 
     GridLayout:
         cols: 7
