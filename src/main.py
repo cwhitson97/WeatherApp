@@ -31,16 +31,7 @@ class WeatherPage(Screen):
 
 
 class ForecastPage(Screen):
-    zip_code = ObjectProperty()
-    country_code = ObjectProperty()
-    zipcode = StringProperty("")
-    countrycode = StringProperty("")
-
-    def save_location(self):
-        self.zipcode = self.zip_code.text
-        print(self.zipcode)
-        self.countrycode = self.country_code.text
-        print(self.countrycode)
+    pass
 
 
 screen = ScreenManager()
@@ -52,7 +43,6 @@ screen.add_widget(ForecastPage(name='forecast'))
 
 
 class MainApp(App):
-
     def build(self):
         return screen
 
