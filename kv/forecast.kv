@@ -11,14 +11,14 @@
             pos: self.pos
     Button:
         font_size: 40
-        background_color: 0/255.0, 0/255.0, 0/255.0 ,0
-        size_hint: 0.1,0.1
-        pos_hint: {"x": 0.01, "y": .90}
-        color: 0,0,0,1
+        background_normal: ''
+        background_color: 199/255.0, 166/255.0, 0/255.0 ,1.0
+        size_hint: 0.1,0.07
+        pos_hint: {"x": 0.01, "y": .92}
         text: "Back"
         on_press: root.manager.current = 'menu'
     Image:
-        source: 'kv/WeatherIcon.png'
+        source: '../kv/WeatherIcon.png'
         size_hint: 0.1,0.1
         pos_hint: {"x": 0.18, "y": 0.88}
     Label:
@@ -48,51 +48,79 @@
         Button:
             size_hint: 0.2,0.2
             text: "Go"
-            on_release: root.save_location()
-
+            on_release:
+                root.weathertoday()
+                root.weekweather()
+    Label:
+        id: city
+        size_hint: 0.5,0.05
+        pos_hint: {"center_x": 0.48, "center_y": .77}
+        bold: True
+        color: 0,0,0,1
     GridLayout:
         cols: 7
-        pos_hint: {"center_x": 0.5, "center_y": .77}
+        pos_hint: {"center_x": 0.5, "center_y": .7}
         size_hint: 1,0.2
         Label:
             color: 0,0,0,1
+            bold: True
             text: 'Monday'
         Label:
             color: 0,0,0,1
+            bold: True
             text: 'Tuesday'
         Label:
             color: 0,0,0,1
+            bold: True
             text: 'Wednesday'
         Label:
             color: 0,0,0,1
+            bold: True
             text: 'Thursday'
         Label:
             color: 0,0,0,1
+            bold: True
             text: 'Friday'
         Label:
             color: 0,0,0,1
+            bold: True
             text: 'Saturday'
         Label:
             color: 0,0,0,1
+            bold: True
             text: 'Sunday'
     GridLayout:
         cols: 7
-        pos_hint: {"center_x": 0.5, "center_y": .5}
-        size_hint: 1,0.5
+        pos_hint: {"center_x": 0.5, "center_y": .48}
+        size_hint: 1,0.4
         TextInput:
+            id: sunday
             readonly: True
+            halign: 'center'
         TextInput:
+            id: monday
             readonly: True
+            halign: 'center'
         TextInput:
+            id: tuesday
             readonly: True
+            halign: 'center'
         TextInput:
+            id: wednesday
             readonly: True
+            halign: 'center'
         TextInput:
+            id: thursday
             readonly: True
+            halign: 'center'
         TextInput:
+            id: friday
             readonly: True
+            halign: 'center'
         TextInput:
+            id: saturday
             readonly: True
+            halign: 'center'
     GridLayout:
         cols: 2
         pos_hint: {"center_x": 0.5, "center_y": .15}
@@ -100,11 +128,13 @@
         spacing: [40,0]
         Button:
             font_size: 40
-            background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
+            background_normal: ''
+            background_color: 199/255.0, 166/255.0, 0/255.0 ,1.0
             text: "Refresh"
         Button:
             font_size: 40
-            background_color: 255/255.0, 247/255.0, 0/255.0 ,1.0
+            background_normal: ''
+            background_color: 199/255.0, 166/255.0, 0/255.0 ,1.0
             text: "Weather tips"
             on_press: root.manager.current = 'weather'
 

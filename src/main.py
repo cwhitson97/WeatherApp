@@ -4,9 +4,9 @@
 
 
 from kivy.app import App
-from kivy.properties import ObjectProperty, StringProperty
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.lang import Builder
+from src.weather_api import *
 
 Builder.load_file('kv/main.kv')
 Builder.load_file('kv/new.kv')
@@ -32,16 +32,20 @@ class WeatherPage(Screen):
 
 
 class ForecastPage(Screen):
-    zip_code = ObjectProperty()
-    country_code = ObjectProperty()
-    zipcode = StringProperty("")
-    countrycode = StringProperty("")
+    def weathertoday(self):
+        self.weather = get_today_weather(self.ids.zip.text, self.ids.country.text)
+        self.ids.city.text = self.weather[0] + "'s Forecast"
+        return self.weather
 
-    def save_location(self):
-        self.zipcode = self.zip_code.text
-        print(self.zipcode)
-        self.countrycode = self.country_code.text
-        print(self.countrycode)
+    def weekweather(self):
+        week = get_forecast_weather(self.weather[5], self.weather[4])
+        self.ids.sunday.text = week[0][1] + '\n' + str(round(week[0][0], 1))
+        self.ids.monday.text = week[1][1] + '\n' + str(round(week[1][0], 1))
+        self.ids.tuesday.text = week[2][1] + '\n' + str(round(week[2][0], 1))
+        self.ids.wednesday.text = week[3][1] + '\n' + str(round(week[3][0], 1))
+        self.ids.thursday.text = week[4][1] + '\n' + str(round(week[4][0], 1))
+        self.ids.friday.text = week[5][1] + '\n' + str(round(week[5][0], 1))
+        self.ids.saturday.text = week[6][1] + '\n' + str(round(week[6][0], 1))
 
 
 screen = ScreenManager()
