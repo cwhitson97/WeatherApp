@@ -97,3 +97,6 @@ __Robby's Accomplishments:__
 
 Completed the full API with proper documentation for other developers to easily use. Also completed the multi day outlook for a week in advance. Stores the information into an easy to use format that can be routed into the GUI.
 
+__Linete Estrada's Accomplishments:__
+
+Succesfully improved the GUI to give it a cleaner/more professional look and updated the builder to access the correct files. This can be shown in the main.py file and the 'kv' files.
