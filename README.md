@@ -91,3 +91,12 @@ Accomplishments for sprint 3: created a base UML diagram for the application, al
 2. Try to create a working application on my device so that we can showcase our product for sprint 3
 3. Get with team so that i can figure out who i can help once  my portion is finished 
 
+__Sprint 3 Completed Tasks__
+
+__Robby's Accomplishments:__
+
+Completed the full API with proper documentation for other developers to easily use. Also completed the multi day outlook for a week in advance. Stores the information into an easy to use format that can be routed into the GUI.
+
+__Linete Estrada's Accomplishments:__
+
+Succesfully improved the GUI to give it a cleaner/more professional look and updated the builder to access the correct files. This can be shown in the main.py file and the 'kv' files.
