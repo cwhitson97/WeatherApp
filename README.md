@@ -85,7 +85,7 @@ Accomplishments for sprint 3: Succesfully completed a working GUI application wh
 	
 __Kristopher  Wilkins's Next Steps:__
 
-Accomplishments for sprint 3: created a base UML diagram for the application, also help create the standard documentation for the project.
+Accomplishments for sprint 3: created a base UML diagram for the application but due to technical problems i have to restart my work on another device.
 * Next Steps:
 1. Fully the complete the UML using the code provided by team in the master branch
 2. Try to create a working application on my device so that we can showcase our product for sprint 3
@@ -100,3 +100,7 @@ Completed the full API with proper documentation for other developers to easily 
 __Linete Estrada's Accomplishments:__
 
 Succesfully improved the GUI to give it a cleaner/more professional look and updated the builder to access the correct files. This can be shown in the main.py file and the 'kv' files.
+
+__Kristopher Wilkins's Accomplishments:__
+
+Completed the UML diagram using the code provided by team membes on the master branch, also helped create and format the standard documentation
